@@ -6,39 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../src/output.css">
 	<title>Document</title>
-
-	<style>
-        /* Custom CSS styles */
-        .custom-width {
-            transition: width 0.3s ease; /* Add transition for width changes */
-        }
-    </style>
-
+	
 </head>
+
+
+
 <body class="bg-neutral-900 border-4 h-screen w-screen flex">
-	<section id="mainSection" class="flex bg-neutral-900 border-r-2 h-full w-full" onclick="toggleWidth('mainSection')">
-		<div id="mainDiv" class="bg-neutral-800 shadow-bottom h-full w-20">
+	<section id="mainSection" class="flex bg-neutral-900 h-full w-full duration-500 z-[4]" onclick="toggleWidth('mainSection')">
+		<div id="mainDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Main</h1>
 		</div>
-		<div class=""></div>
+		<div class="section-content"></div>
 	</section>
-	<section id="skillsSection" class="flex bg-neutral-900 border-r-2 h-full" onclick="toggleWidth('skillsSection')">
-		<div id="skillsDiv" class="bg-neutral-800 shadow-bottom h-full w-20">
+	<section id="skillsSection" class="flex bg-neutral-900 h-full w-24 duration-500 z-[3]" onclick="toggleWidth('skillsSection')">
+		<div id="skillsDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Skills</h1>
 		</div>
-		<div class=""></div>
+		<div class="section-content"></div>
 	</section>
-	<section id="projectsSection" class="flex bg-neutral-900 border-r-2 h-full" onclick="toggleWidth('projectsSection')">
-		<div id="projectsDiv" class="bg-neutral-800 shadow-bottom h-full w-20">
+	<section id="projectsSection" class="flex bg-neutral-900 h-full w-24 duration-500 z-[2]" onclick="toggleWidth('projectsSection')">
+		<div id="projectsDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Projects</h1>
 		</div>
-		<div class=""></div>
+		<div class="section-content"></div>
 	</section>
-	<section id="contactsSection" class="flex bg-neutral-900 border-r-2 h-full" onclick="toggleWidth('contactsSection')">
-		<div id="contactsDiv" class="bg-neutral-800 shadow-bottom h-full w-20">
+	<section id="contactsSection" class="flex bg-neutral-900 h-full w-24 duration-500 z-[1]" onclick="toggleWidth('contactsSection')">
+		<div id="contactsDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Contacts</h1>
 		</div>
-		<div class=""></div>
+		<div class="section-content"></div>
 	</section>
 
 	<script src="toggle.js"></script>
