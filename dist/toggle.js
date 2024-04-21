@@ -10,9 +10,19 @@ function toggleWidth(sectionId) {
         if (section === clickedSection) {
             section.classList.remove('w-24');
             section.classList.add('w-full');
+            // Find the section-content within the clicked section and hide it
+            const content = section.querySelector('.section-content');
+            if (content) {
+                content.classList.remove('hidden');
+            }
         } else {
             section.classList.remove('w-full');
             section.classList.add('w-24');
+            // Find the section-content within the other sections and show it
+            const content = section.querySelector('.section-content');
+            if (content) {
+                content.classList.add('hidden');
+            }
         }
     });
 }

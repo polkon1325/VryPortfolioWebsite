@@ -11,30 +11,43 @@
 
 
 
-<body class="bg-neutral-900 border-4 h-screen w-screen flex">
-	<section id="mainSection" class="flex bg-neutral-900 h-full w-full duration-500 z-[4]" onclick="toggleWidth('mainSection')">
+<body class="bg-neutral-900 border-4 h-screen flex overflow-hidden">
+	<section id="mainSection" class="flex bg-neutral-900 h-full w-full duration-700" onclick="toggleWidth('mainSection')">
 		<div id="mainDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Main</h1>
 		</div>
-		<div class="section-content"></div>
+		<div class="section-content w-max h-full overflow-hidden">
+			<div class="flex w-max h-32 mx-20 mt-20 p-5">
+				<h1 class="align-middle text-white text-7xl font-sans font-medium mr-5">Hi, I'm </h1>
+				<h1 class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-transparent text-7xl font-sans font-bold ">Vryan </h1>
+				<h1 class="text-7xl font-sans font-bold">👋</h1>
+				<div class="h-full w-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate-pulse"></div>
+			</div>
+		</div>
 	</section>
-	<section id="skillsSection" class="flex bg-neutral-900 h-full w-24 duration-500 z-[3]" onclick="toggleWidth('skillsSection')">
+	<section id="skillsSection" class="flex bg-neutral-900 h-full w-24 duration-700" onclick="toggleWidth('skillsSection')">
 		<div id="skillsDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Skills</h1>
 		</div>
-		<div class="section-content"></div>
+		<div class="hidden section-content w-max h-full bg-black overflow-hidden">
+			<h1 class="text-white">Hi</h1>
+		</div>
 	</section>
-	<section id="projectsSection" class="flex bg-neutral-900 h-full w-24 duration-500 z-[2]" onclick="toggleWidth('projectsSection')">
+	<section id="projectsSection" class="flex bg-neutral-900 h-full w-24 duration-700" onclick="toggleWidth('projectsSection')">
 		<div id="projectsDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Projects</h1>
 		</div>
-		<div class="section-content"></div>
+		<div class="hidden section-content w-max h-full bg-black overflow-hidden">
+			<h1 class="text-white">Hi</h1>
+		</div>
 	</section>
-	<section id="contactsSection" class="flex bg-neutral-900 h-full w-24 duration-500 z-[1]" onclick="toggleWidth('contactsSection')">
+	<section id="contactsSection" class="flex bg-neutral-900 h-full w-24 duration-700" onclick="toggleWidth('contactsSection')">
 		<div id="contactsDiv" class="bg-neutral-800 shadow-inside h-full w-24">
 			<h1 class="text-white text-right text-3xl -rotate-90 mt-16">Contacts</h1>
 		</div>
-		<div class="section-content"></div>
+		<div class="hidden section-content w-max h-full bg-black overflow-hidden">
+			<h1 class="text-white">Hi</h1>
+		</div>
 	</section>
 
 	<script src="toggle.js"></script>
