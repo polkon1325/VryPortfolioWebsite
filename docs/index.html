@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../src/output.css">
+	<title>Document</title>
+	
+</head>
+
+<style>
+	.expanded {
+		flex-grow: 20;
+	}
+</style>
+
+<body class="bg-neutral-900 border-4 flex flex-col h-screen overflow-x-hidden">
+	<section id="mainSection" class="bg-neutral-900 duration-700 expanded" onclick="toggleWidth('mainSection')">
+		<div id="mainDiv" class="bg-neutral-800 shadow-inside">
+			<h1 class="text-white">Main</h1>
+		</div>
+		<div class="">
+			<div class="">
+				<h1 class="align-middle text-white text-7xl font-sans font-medium mr-5">Hi, I'm </h1>
+				<h1 class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-transparent text-7xl font-sans font-bold ">Vryan </h1>
+				<h1 class="text-7xl font-sans font-bold">👋</h1>
+				<div class="h-full w-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate-pulse"></div>
+			</div>
+		</div>
+	</section>
+	<section id="skillsSection" class="bg-neutral-900 duration-700" onclick="toggleWidth('skillsSection')">
+		<div id="skillsDiv" class="bg-neutral-800 shadow-inside h-full">
+			<h1 class="text-white">Skills</h1>
+		</div>
+		<div class="section-content bg-black overflow-hidden">
+			<h1 class="text-white">Hi</h1>
+		</div>
+	</section>
+	<section id="projectsSection" class="bg-neutral-900 duration-700" onclick="toggleWidth('projectsSection')">
+		<div id="projectsDiv" class="bg-neutral-800 shadow-inside h-full">
+			<h1 class="text-white">Projects</h1>
+		</div>
+		<div class="section-content bg-black overflow-hidden">
+			<h1 class="text-white">Hi</h1>
+		</div>
+	</section>
+	<section id="contactsSection" class="bg-neutral-900 duration-700" onclick="toggleWidth('contactsSection')">
+		<div id="contactsDiv" class="bg-neutral-800 shadow-inside h-full">
+			<h1 class="text-white">Contacts</h1>
+		</div>
+		<div class="section-content bg-black overflow-hidden">
+			<h1 class="text-white">Hi</h1>
+		</div>
+	</section>
+
+	<script src="toggle.js"></script>
+</body>
+</html>
