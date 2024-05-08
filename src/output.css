@@ -595,10 +595,6 @@ video {
   width: 0.5rem;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -606,6 +602,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .flex-grow {
@@ -753,8 +753,14 @@ video {
   animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.expanded {
+  flex-grow: 20;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
